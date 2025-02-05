@@ -1,9 +1,15 @@
-import React from 'react'
+import Sidenav from './templates/Sidenav'
+import Topnav from './templates/Topnav'
 
 function Home() {
   document.title= 'Homepage'
   return (
-    <div className='w-[20%] h-full'>Home</div>
+    <>
+      <Sidenav/>
+      <div className='w-[80%] h-full  bg-amber-950'> 
+      <Topnav/>
+      </div>
+    </>
   )
 }
 
