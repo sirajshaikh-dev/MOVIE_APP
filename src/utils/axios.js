@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const instance = axios.create({
+const axiosInstance = axios.create({
   baseURL: "https://api.themoviedb.org/3", //DOMAIN URL
   headers: {
     accept: "application/json",
@@ -9,4 +9,4 @@ const instance = axios.create({
   },
 });
 
-export default instance
+export default axiosInstance
