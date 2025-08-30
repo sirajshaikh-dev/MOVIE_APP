@@ -5,7 +5,7 @@ import Home from './components/Home'
 function App() {
 
   return (
-    <div className='bg-[#1f1e24] w-screen h-screen flex'>
+    <div className='bg-[#1f1e24] w-full h-full flex'>
      <Routes>
         <Route path='/' element={<Home/>} />
      </Routes>

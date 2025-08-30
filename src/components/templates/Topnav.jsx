@@ -15,29 +15,31 @@ const Topnav = () => {
       console.log("Error", error);
     }
   };
-
+ 
   useEffect(() => {
     getSearches();
   }, [query]);
 
   return (
-    <div className="w-full h-[10vh] relative flex justify-start items-center ">
+    <div className="w-full h-[10vh] relative flex justify-start items-center pl-[15%] ">
       <i className="ri-search-line text-3xl text-zinc-400"></i>
       <input
-        className="w-[50%] mx-10 p-5 text-xl outline-none border-none bg-transparent text-zinc-300"
+        className="w-[50%] mx-5 px-5 text-xl outline-none border-none bg-transparent text-zinc-300"
         type="text"
-        placeholder="search"
+        placeholder="search anything ..."
         onChange={(e) => setQuery(e.target.value)}
         value={query}
       />
       {query.length > 0 && (
         <i
-          className="ri-close-line text-3xl text-red-400"
+          className="ri-close-fill text-3xl text-red-400 cursor-pointer"
           onClick={() => setQuery("")}
         ></i>
       )}
 
-      <div className="absolute w-[50%] max-h-[50vh] bg-zinc-200 top-[100%] left-[5%] overflow-auto">
+      <div className="absolute top-[100%] w-[42%] max-h-[50vh] left-[20%] bg-zinc-200 overflow-auto"
+      // style={{ left: `${left}%` }}
+      >
         {searches.map((search, i) => (
           <Link
             key={i}
