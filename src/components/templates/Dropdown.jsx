@@ -53,22 +53,22 @@ const Dropdown = ({ title, options, setCategory }) => {
 };
 
 // Add CSS for animation
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes slideDown {
-        from {
-            opacity: 0;
-            transform: translateY(-10px) scale(0.95);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
-    }
-    .animate-slideDown {
-        animation: slideDown 0.2s ease-out;
-    }
-`;
-document.head.appendChild(style);
+// const style = document.createElement('style');
+// style.textContent = `
+//     @keyframes slideDown {
+//         from {
+//             opacity: 0;
+//             transform: translateY(-10px) scale(0.95);
+//         }
+//         to {
+//             opacity: 1;
+//             transform: translateY(0) scale(1);
+//         }
+//     }
+//     .animate-slideDown {
+//         animation: slideDown 0.2s ease-out;
+//     }
+// `;
+// document.head.appendChild(style);
 
 export default Dropdown;
