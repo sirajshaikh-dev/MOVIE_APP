@@ -9,7 +9,7 @@ import { Link } from "react-router-dom"
       </h1>
       <nav className="flex flex-col text-zinc-400 text-lg  ">
         <h1 className="text-white font-semibold text-xl mt-8 mb-4">New Feeds</h1>
-        <Link className="hover:bg-[#6556CD] hover:text-white duration-300 rounded-lg p-3.5" > 
+        <Link to={'/trending'} className="hover:bg-[#6556CD] hover:text-white duration-300 rounded-lg p-3.5" > 
             <i className="ri-fire-fill"></i> Trending
         </Link> 
         <Link className="hover:bg-[#6556CD] hover:text-white duration-300 rounded-lg p-3.5">
